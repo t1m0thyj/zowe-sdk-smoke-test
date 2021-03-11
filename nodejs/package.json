@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:provisioning && npm run test:workflows && npm run test:zosconsole && npm run test:zosfiles && npm run test:zosjobs && npm run test:zosmf && npm run test:zostso && npm run test:zosuss",
+    "test:provisioning": "ts-node provisioning.ts",
+    "test:workflows": "ts-node workflows.ts",
+    "test:zosconsole": "ts-node zosconsole.ts",
+    "test:zosfiles": "ts-node zosfiles.ts",
+    "test:zosjobs": "ts-node zosjobs.ts",
+    "test:zosmf": "ts-node zosmf.ts",
+    "test:zostso": "ts-node zostso.ts",
+    "test:zosuss": "ts-node zosuss.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.14",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
